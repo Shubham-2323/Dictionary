@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Roboto:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d); */
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.wrapper {
+    width: 420px;
+    background: wheat;
+    border-radius: 7px;
+    padding: 28px 28px 45px;
+}
+
+.wrapper header {
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper .search {
+    margin: 35px 0 18px;
+    position: relative;
+}
+
+.search input {
+    height: 53px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 42px;
+    font-size: 16px;
+    border: 1px solid #999;
+}
+
+.search input:focus {
+    padding: 0 41px;
+    border: 2px solid #4d59fb;
+}
+
+.search input::placeholder {
+    color: gray;
+}
+
+.search :where(i, span) {
+    position: absolute;
+    top: 50%;
+    color: #999;
+    transform: translateY(-50%);
+}
+
+.search span {
+    right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.search input:focus~i {
+    color: #4d59fb;
+}
+
+.search input:valid~span {
+    display: block;
+}
+
+.search i {
+    left: 18px;
+    font-size: 16px;
+    pointer-events: none;
+
+}
+
+.wrapper ul {
+    display: none;
+}
+
+.wrapper .active .info-text {
+    display: none;
+}
+
+.wrapper .info-text {
+    font-size: 15px;
+    color: #7e7e7e;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.wrapper.active ul {
+
+    height: 330px;
+    opacity: 1;
+    
+}
+
+.wrapper ul{
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.7s ease;
+    display: block;
+}
+
+.info-text span{
+
+    font-weight: 500;
+}
+
+.wrapper ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    padding-bottom: 16px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+ul .word p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+ul .word span {
+    font-size: 12px;
+    color: #989898;
+}
+
+ul .word i {
+    cursor: pointer;
+    font-size: 15px;
+    color: #999;
+}
+
+ul li:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+}
+
+.content li .details {
+    border-left: 3px solid #4d59fb;
+    border-radius: 4px 0 0 4px;
+    padding: 10px;
+}
+
+.content li details p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.content li .details span {
+    font-size: 15px;
+    color: #7e7e7e;
+}
+
+#sync .details .list {
+    display: flex;
+    flex-wrap: wrap;
+    /* cursor: pointer; */
+}
+
+#sync .details .list span {
+    text-decoration: underline;
+    margin-right: 10x;
+}
+
+#sync .details .list span {
+    text-decoration: underline;
+    margin-right: 10x;
+}
+
+#sync .details .list span {
+    text-decoration: underline;
+    margin-right: 5px;
+}
+
+#sync .details .list span {
+    text-decoration: underline;
+    margin-right: 5px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary app</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>English Dictionary</header>
+        <div class="search">
+            <input type="text" placeholder="search a word" required>
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span class="material-icons">close</span>
+        </div>
+        <p class="info-text">Type a word and press Enter</p>
+        <ul>
+            <li class="word">
+                <div class="details">
+                    <p></p>
+                    <span></span>
+                </div>
+            </li>
+
+            <div class="content">
+                <li class="Meaning">
+                    <div class="details">
+                        <p>Meaning</p>
+                        <span></span>
+                    </div>
+                </li>
+
+                <li class="example">
+                    <div class="details">
+                        <p>Example</p>
+                        <span></span>
+                    </div>
+                </li>
+
+                <!-- <li id="sync" class="synonymm">
+                    <div class="details">
+                        <p>Synonym</p>
+                        <span>Helo ,</span>
+                        <span>Hey buddy ,</span>
+                        <span>Hii ,</span>
+                        <span>Heysup </span>
+                    </div>
+                </li> -->
+            </div>
+
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
